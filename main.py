@@ -1,10 +1,15 @@
-from flask import Flask
+from flask import Flask, render_template
 
-app = Flask(__name__)
+app = Flask(
+    __name__,
+    template_folder="frontend",
+    static_folder="frontend"
+)
 
 @app.route("/")
 def home():
-    return Flask.render_template("index.html")
+    return render_template("home.html")
+
 
 @app.route("/cities")
 def cities():
@@ -13,6 +18,7 @@ def cities():
 @app.route("/login")
 def login():
     return "Login page coming soon"
+
 
 
 if __name__ == "__main__":
