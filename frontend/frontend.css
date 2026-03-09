@@ -1,20 +1,15 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
+/* Page background */
 body {
+    margin: 0;
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
 }
 
-/* NAVBAR */
+/* Navigation bar */
 
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     background-color: #1f2937;
     padding: 15px 30px;
 }
@@ -27,60 +22,43 @@ body {
     align-items: center;
 }
 
-.nav-left { justify-content: flex-start; }
-.nav-center { justify-content: center; }
-.nav-right { justify-content: flex-end; }
+.nav-left {
+    justify-content: flex-start;
+}
+
+.nav-center {
+    justify-content: center;
+}
+
+.nav-right {
+    justify-content: flex-end;
+}
 
 .nav-btn {
-    text-decoration: none;
     color: white;
+    text-decoration: none;
     background-color: #374151;
-    padding: 10px 18px;
-    border-radius: 6px;
+    padding: 10px 15px;
+    border-radius: 5px;
 }
 
 .nav-btn:hover {
     background-color: #4b5563;
 }
 
-/* HOME SECTION */
+/* Home page styling */
 
-.hero {
+.home-container {
     text-align: center;
-    padding: 80px;
+    padding: 80px 20px;
 }
 
-.hero h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
+.home-title {
+    font-size: 40px;
+    margin-bottom: 15px;
 }
 
-/* LOGIN FORM */
-
-.container {
-    text-align: center;
-    margin-top: 100px;
-}
-
-.login-form {
-    display: inline-flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 250px;
-}
-
-.login-form input {
-    padding: 10px;
-}
-
-.login-form button {
-    padding: 10px;
-    background-color: #1f2937;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.login-form button:hover {
-    background-color: #374151;
+.home-text {
+    font-size: 18px;
+    color: #555;
 }
